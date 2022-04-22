@@ -1,14 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
-import MovieCard from "./Components/MovieCard";
-import { movieData } from "./Components/movieData";
+import './App.css';
+import React from 'react';
+import MovieCard from './Components/MovieCard';
+import MovieForm from './Components/MovieForm';
 
 function App() {
+
   return (
-    <div>
-      <MovieCard movieData = {movieData} />
+    <div> 
+
+     <MovieForm />
+
     </div>
-  );
+  )
+
 }
 
 export default App;

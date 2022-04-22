@@ -1,10 +1,29 @@
-let API_KEY = "";
-
-async function getMoviesByName(name) {
-  const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${name}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  console.log(data);
+// Declare variable for the search input and create a function to get the movie details
+export const getMoviesByName = async (name) => {
+    let apiKey = "";
+    // Accessing the API 
+        const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${name}`;
+        // Get an object of detailed information about the specified movie
+        const response = await fetch(url);
+        // return an array of movies with a matching title from OMDB API
+        const data = await response.json();
+        console.log(data);
 }
 
-getMoviesByName("Avengers");
+getMoviesByName();
+
+
+
+// Declare variable for the search input and create a function to get the movie details
+export const getMoviesDetailsById = async (id) => {
+    let apiKey = "";
+    // Accessing the API 
+        const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${id}`;
+        // Get an object of detailed information about the specified movie
+        const response = await fetch(url);
+        // return an array of movies with a matching title from OMDB API
+        const data = await response.json();
+        console.log(data);
+}
+
+getMoviesByName();

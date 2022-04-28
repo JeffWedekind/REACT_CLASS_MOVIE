@@ -1,15 +1,15 @@
 import './App.css';
-import React from 'react';
-import MovieCard from './Components/MovieCard';
+import React, { useState } from 'react';
 import MovieForm from './Components/MovieForm';
 
-function App() {
 
+function App() {
+  
   return (
     <div> 
 
      <MovieForm />
-
+     
     </div>
   )
 

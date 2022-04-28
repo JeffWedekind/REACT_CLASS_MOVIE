@@ -7,7 +7,7 @@ export default function MovieForm () {
 
     React.useEffect (() => {
         const getMoviesByName = async (name) => {
-        let apiKey = "";
+        let apiKey = "3ba39a90";
             const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${name}`;
             const response = await fetch(url);
             const data = await response.json();

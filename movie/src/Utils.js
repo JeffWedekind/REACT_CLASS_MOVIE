@@ -1,6 +1,6 @@
 // Declare variable for the search input and create a function to get the movie details
 export const getMoviesByName = async (name) => {
-    let apiKey = "";
+    let apiKey = "3ba39a90";
     // Accessing the API 
         const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${name}`;
         // Get an object of detailed information about the specified movie
@@ -16,7 +16,7 @@ getMoviesByName();
 
 // Declare variable for the search input and create a function to get the movie details
 export const getMoviesDetailsById = async (id) => {
-    let apiKey = "";
+    let apiKey = "3ba39a90";
     // Accessing the API 
         const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${id}`;
         // Get an object of detailed information about the specified movie
